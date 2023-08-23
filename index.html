@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AERI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body class="font-[montserrat] overflow-x-hidden">
+ 
+    <nav class="fixed top-0 left-0 w-full bg-zinc-100 z-[50] p-3 flex justify-between">
+        <a href="/" class="font-semibold text-lg text-cyan-800 md:text-2xl">AERI</a>
+        <div id="nav-list" class="flex flex-col items-end bg-zinc-100 text-cyan-800 absolute right-3 top-12 p-5 rounded text-lg md:static md:flex-row md:justify-around md:w-4/12 md:top-0 md:right-0 md:p-0 md:text-base lg:w-3/12 invisible md:visible">
+            <a href="/" class="font-semibold">HOME</a>
+            <a href="cars.html" class="my-1 md:my-0">CARS</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+        <button id="nav-btn" class="text-cyan-800 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+        </button>
+    </nav>
+
+    <header class="relative w-screen h-screen bg-zinc-100 flex flex-col justify-center items-center overflow-hidden">
+        <h1 class="font-semibold text-cyan-800 text-6xl z-10 translate-y-8 sm:text-7xl sm:translate-y-5 md:text-8xl md:translate-y-0 lg:text-9xl lg:-translate-y-3">AERI</h1>
+        <h3 class="text-amber-100 translate-y-28 z-20 text-lg font-semibold sm:text-xl sm:translate-y-32 md:text-3xl lg:translate-y-28">Car Rental</h3>
+        <img src="assets/img/car-header-home.png" class="z-10 absolute w-[300px] translate-y-20 sm:w-[380px] md:w-[500px]" alt="" id="car-home">
+        <img src="assets/img/bg-header-home.png" class="h-screen w-[180vw] lg:w-screen object-cover absolute top-0 left-0" alt="header-bg" id="header-bg">
+    </header>
+    
+    <main>
+        <section id="find-car" class="min-h-screen w-screen overflow-hidden flex flex-col items-center justify-center relative bg-cyan-800">
+            <img src="assets/img/car-find-car-home.png" class="w-[250px] z-10 my-5 sm:w-[380px] md:w-[450px] lg:w-[550px] xl:w-[650px]" id="car-find-car" alt="">
+            <div class="flex flex-col items-center sm:flex-row xl:mt-5">
+                <h3 id="find-car-content" class="text-white z-10 text-lg md:text-xl lg:text-2xl xl:text-3xl">WE CAN HELP YOU <br>TO FEEL CAR YOU WANT <br> TO DRIVE</h3>
+                <a href="cars.html" id="find-car-nav" class="bg-amber-100 text-cyan-800 font-medium mt-3 z-10 w-fit px-3 py-1 sm:ml-10 md:text-lg lg:text-xl xl:text-2xl">FIND CAR</a>
+            </div>
+            <img src="assets/img/bg-find-car-home.jpg" class="w-full h-screen object-cover object-left absolute top-0 left-0 lg:object-center" alt="bg-find-car" id="bg-find-car">
+        </section>
+        <section id="check-car"  class="min-h-screen w-screen overflow-hidden flex flex-col items-center justify-center relative bg-zinc-100">
+            <h1 class="text-white text-3xl z-10 text-center font-semibold w-11/12 mx-auto sm:text-5xl sm:-translate-y-10 md:w-10/12 lg:text-6xl">WE ALWAYS CHECK THE CARS</h1>
+            <p id="check-car-content" class="text-center z-10 text-white my-3 w-11/12 sm:text-lg md:text-xl lg:text-2xl">MAKE SURE ALL FACILITY AND TOOL IS RUNNING WELL <br>AC, AUDIO SYSTEM, AND ALL SAFETY</p>
+            <p id="check-car-ready" class="bg-cyan-800 text-amber-100 px-3 py-1 z-10 font-medium sm:text-lg md:text-xl lg:text-2xl">READY TO DRIVE</p>
+            <img src="assets/img/bg-check-car-home.png" class="w-screen h-screen absolute top-0 left-0 object-cover object-top" id="check-car-bg" alt="">
+        </section>
+        <section id="drivers" class="h-screen w-screen relative flex flex-col justify-center items-center p-8">
+            <img src="assets/img/wheel-steer-home.png" class="w-[200px] absolute -translate-x-10 z-10 sm:w-[250px] md:w-[300px] lg:w-[400px]" alt="">
+            <p id="drivers-destination" class="text-white absolute translate-x-16 sm:translate-x-20 md:translate-x-28 lg:translate-x-40"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-32 h-32 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:h-60 lg:w-60">
+                <path fill-rule="evenodd"
+                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd" />
+            </svg></p>
+            <p id="drivers-content" class="text-white text-lg -translate-x-8 translate-y-24 font-semibold z-20 sm:translate-y-36 sm:-translate-x-28 sm:text-xl md:-translate-x-36 md:translate-y-44 md:text-2xl lg:-translate-x-64 lg:text-3xl xl:-translate-x-80 xl:text-4xl">WE HAVE <br> PROFESSIONAL DRIVERS TOO <br> WHO CAN WILL TAKE YOU TO <br>YOUR DESTINATION</p>
+        </section>
+        <section id="need-us" class="p-5 w-full min-h-screen md:py-16 lg:pb-32">
+            <h1 class="font-semibold text-4xl text-cyan-800 mt-10 text-center md:text-6xl">NEED US ?</h1>
+            <div class="grid grid-cols-2 grid-rows-3 mt-16 gap-5 sm:w-10/12 sm:mx-auto md:w-9/12">
+                <p class="text-gray-800 sm:text-lg md:text-xl lg:text-2xl">Just come to <br> <br> JL. A. YANI KM. 30
+                BANJARBARU
+                KALIMANTAN SELATAN</p>
+                <img src="https://abisgajian.id/images/thumbnail/5-keuntungan-membeli-mobil-bekasi-di-showroom.jpg" class="need-us-images row-span-2 object-cover w-full h-[300px]" alt="">
+                <img src="assets/img/need-us-home.jpg" class="need-us-images row-span-2 object-cover w-full h-[300px]" alt="">
+                <p class="text-cyan-800 sm:text-lg md:text-xl lg:text-2xl">Or Just Call <br><br>+628228811991</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cyan-800 p-3 flex flex-col items-center text-white md:grid md:grid-cols-3 md:gap-5">
+        <p class="font-semibold text-xl md:text-center">AERI</p>
+        <div class="mt-10 w-10/12 text-xs text-center md:w-fit md:text-sm">
+            <p>Address : Jl. A. Yani KM. 30 Banjarbaru Kalimantan Selatan</p>
+            <p>+628228811991</p>
+        </div>
+        <div class="mt-10 w-10/12 text-xs text-center md:w-fit md:text-sm lg:text-left">
+            <p>Copyright2023 | All Rights Reserved | Privacy Policy</p>
+            <p>by <a href="https://ahyaghifari.my.id" target="_blank">ahyaghifari</a></p>
+            <p class="text-[10px] mt-5">All images from in the internet just for my study project - ahyaghifari</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

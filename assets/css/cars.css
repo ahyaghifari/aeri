@@ -1,0 +1,43 @@
+body{
+    background-image: url('../img/bg-cars.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body.unscroll{
+    height: 100%;
+    overflow: hidden;
+}
+
+#cars-detail{
+    background: rgb(20, 108, 120);
+}
+
+
+.owl-carousel{
+    background-color: rgba(0, 0, 0, 0.200);
+    align-items: center;
+    height: 35vh;
+}
+
+#cars-detail{
+    z-index: -10;
+    transform: translateX(100%);
+    transition: 0.6s all ease-in-out;
+}
+
+#cars-detail.active{
+    z-index: 50;
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    #cars-detail {
+        background: rgb(20, 108, 120);
+        background: linear-gradient(90deg, rgba(20, 108, 120, 1) 0%, rgba(0, 167, 157, 1) 100%);
+    }
+    .owl-carousel {
+        height: 45vh;
+    }
+}

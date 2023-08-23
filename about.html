@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AERI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body class="font-[montserrat] overflow-x-hidden">
+ 
+    <nav class="fixed top-0 left-0 w-full z-[50] md:bg-[#01a199] p-3 flex justify-between">
+        <a href="/" class="font-semibold text-lg text-zinc-100 md:text-2xl">AERI</a>
+        <div id="nav-list" class="flex flex-col items-end bg-zinc-100 text-cyan-800 absolute right-3 top-12 p-5 rounded text-lg md:static md:flex-row md:justify-around md:w-4/12 md:top-0 md:right-0 md:p-0 md:text-base lg:w-3/12 invisible md:visible md:text-zinc-100 md:bg-transparent">
+            <a href="/">HOME</a>
+            <a href="cars.html" class="my-1 md:my-0">CARS</a>
+            <a href="about.html" class="font-semibold">ABOUT</a>
+        </div>
+        <button id="nav-btn" class="text-zinc-100 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+        </button>
+    </nav>
+    
+    <main class="flex flex-col-reverse min-h-screen justify-end md:flex-row md:items-center">
+        <div class="p-3 text-zinc-100 md:w-1/2 lg:ml-5">
+            <h1 class="mt-5 text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">ABOUT</h1>
+            <h3 class="mt-3 text-sm sm:w-3/4 sm:text-base md:text-lg lg:text-xl lg:mt-5">AERI is a trusted car rental, <br> officialy open at 20 August 2022.<br><br>We have cars that you can drive yourself to your destiny. Because we trust our consumer too.</h3>
+        </div>
+        <div class="relative h-[50vh] flex flex-col items-center justify-center md:w-1/2 md:h-screen">
+            <img id="car" src="assets/img/car-about.png" class="absolute z-10 w-9/12" alt="">
+            <img id="car-bg" src="assets/img/bg-car-about.png" class="h-full w-full object-cover" alt="">
+        </div>
+    </main>
+
+    <footer class="bg-cyan-800 p-3 flex flex-col items-center text-white md:grid md:grid-cols-3 md:gap-5">
+        <p class="font-semibold text-xl md:text-center">AERI</p>
+        <div class="mt-10 w-10/12 text-xs text-center md:w-fit md:text-sm">
+            <p>Address : Jl. A. Yani KM. 30 Banjarbaru Kalimantan Selatan</p>
+            <p>+628228811991</p>
+        </div>
+        <div class="mt-10 w-10/12 text-xs text-center md:w-fit md:text-sm lg:text-left">
+            <p>Copyright2023 | All Rights Reserved | Privacy Policy</p>
+            <p>by <a href="https://ahyaghifari.my.id" target="_blank">ahyaghifari</a></p>
+            <p class="text-[10px] mt-5">All images from in the internet just for my study project - ahyaghifari</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>
